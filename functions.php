@@ -259,7 +259,7 @@ final class Functions {
 		 *
 		 * @since 1.0.0
 		 */
-		add_editor_style( '/assets/css/editor-style.min.css', [ 'yates-admin-theme' ], '', 'screen' );
+		add_editor_style( '/assets/css/editor-style.css', [ 'yates-admin-theme' ], '', 'screen' );
 
 	}
 
@@ -314,7 +314,7 @@ final class Functions {
 	public function frontend_styles() {
 
 		// Theme sylesheet.
-		wp_enqueue_style( 'yates-style', get_theme_file_uri( 'style.min.css' ), [], '', 'screen' );
+		wp_enqueue_style( 'yates-style', get_theme_file_uri( 'style.css' ), [], '', 'screen' );
 
 		$google = checkdnsrr( 'google.com' );
 
@@ -348,7 +348,7 @@ final class Functions {
 		wp_enqueue_style( 'adobe-fonts', 'https://use.typekit.net/zry0ihc.css', [], null, 'screen' );
 
 		// Admin styles.
-		wp_enqueue_style( 'yates-admin-theme',  get_theme_file_uri( '/assets/css/admin.min.css' ), [], '', 'screen' );
+		wp_enqueue_style( 'yates-admin-theme',  get_theme_file_uri( '/assets/css/admin.css' ), [], '', 'screen' );
 
 	}
 
@@ -373,7 +373,7 @@ final class Functions {
 
 		wp_enqueue_style( 'adobe-fonts', 'https://use.typekit.net/zry0ihc.css', [], null, 'screen' );
 
-		wp_enqueue_style( 'yates-theme-login', get_theme_file_uri( '/assets/css/login.min.css' ), [], '', 'screen' );
+		wp_enqueue_style( 'yates-theme-login', get_theme_file_uri( '/assets/css/login.css' ), [], '', 'screen' );
 
 	}
 
