@@ -16,9 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  * Conditional title tag.
  */
 if ( is_front_page() && ! is_paged() ) {
-    $title = sprintf( '<h1 class="site-title" itemprop="name">%1$s<span class="yates-asc">, ASC</span></h1>', 'Toby Yates' );
+    $title = sprintf( '<h1 class="site-title" itemprop="name">%1$s</h1>', 'Toby Yates' );
 } else {
-    $title = sprintf( '<p class="site-title" itemprop="name"><a href="%1s" rel="home">%2s<span class="yates-asc">, ASC</span></a></p>', esc_url( home_url( '/' ) ), 'Toby Yates' );
+    $title = sprintf( '<p class="site-title" itemprop="name"><a href="%1s" rel="home">%2s</a></p>', esc_url( home_url( '/' ) ), 'Toby Yates' );
 }
 $site_title = apply_filters( 'yates_site_title', $title );
 

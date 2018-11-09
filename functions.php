@@ -121,11 +121,11 @@ final class Functions {
     public function loader() {
 
         if ( is_front_page() && is_home() ) {
-            $loading = 'Toby Yates, ASC';
+            $loading = 'Toby Yates';
         } elseif ( is_front_page() ) {
-            $loading = 'Toby Yates, ASC';
+            $loading = 'Toby Yates';
         } elseif ( is_home() ) {
-            $loading = 'Toby Yates, ASC';
+            $loading = 'Toby Yates';
         } elseif ( is_post_type_archive( 'features' ) ) {
             $loading = __( 'Loading Features', 'yates' );
         } elseif ( is_post_type_archive( 'commercials' ) ) {
@@ -399,7 +399,7 @@ final class Functions {
 	 */
 	public function login_heading() {
 
-		return 'Toby Yates<span class="yates-asc">, ASC</span>';
+		return 'Toby Yates';
 
 	}
 

@@ -20,7 +20,7 @@ do_action( 'yates_before_footer_content' );
             '<p class="copyright-text" itemscope="itemscope" itemtype="http://schema.org/CreativeWork">&copy; <span class="screen-reader-text">%1s</span><span itemprop="copyrightYear">%2s</span> <span itemprop="copyrightHolder">%3s</span></p>',
             esc_html__( 'Copyright ', 'yates' ),
             get_the_time( 'Y' ),
-            esc_html__( 'Toby Yates, ASC. All rights reserved.' )
+            esc_html__( 'Toby Yates. All rights reserved.' )
         );
 
         $copyright = apply_filters( 'yates_copyright_text', $copyright_text );

@@ -68,7 +68,7 @@ class Template_Filters {
      */
     public function dark_mode( $classes ) {
 
-        if ( class_exists( 'acf_pro' ) && is_plugin_active( 'suhrstedt-plugin/suhrstedt-plugin.php' ) ) {
+        if ( class_exists( 'acf_pro' ) && is_plugin_active( 'yates-plugin/yates-plugin.php' ) ) {
 
             $dark_mode = get_field( 'yates_dark_mode', 'option' );
 
@@ -84,6 +84,8 @@ class Template_Filters {
 
             return $classes;
 
+        } else {
+            return $classes;
         }
 
     }

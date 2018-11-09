@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 /**
  * Conditional title tag.
  */
-$title      = sprintf( '<h1 class="site-title" itemprop="name">%1$s<span class="yates-asc">, ASC</span></h1>', 'Toby Yates' );
+$title      = sprintf( '<h1 class="site-title" itemprop="name">%1$s</h1>', 'Toby Yates' );
 $site_title = apply_filters( 'yates_site_title', $title );
 
 /**
